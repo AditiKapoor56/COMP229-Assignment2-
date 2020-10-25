@@ -1,7 +1,7 @@
 Links
 ------------------
 Heroku:https://nameless-peak-92006.herokuapp.com/login
-Github:
+Github:https://github.com/AditiKapoor56/COMP229-Assignment2-
 
 Login details
 ------------------
