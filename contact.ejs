@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+        <h1 class="aboutme-title">How you can reach me,</h1>
+        <section class="contact">
+            <h1 class="caption">Contact</h1>
+            <table class="contact-table">
+                <tr>
+                    <td>Name</td>
+                    <td>Aditi Kapoor</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Kapooraditi471@gmail.com</td>
+                </tr>
+            </table>
+            <p>
+                Please contact only if you have a valid reason for collaboration, of you have to know more about my serivces.
+                I do not entertain any request that does not provide mutual benefit.
+            </p>
+       </section>
+        <section class="contactform">
+            <h1 class="caption">Contact Form</h1>
+            <p>
+                Feel free to get in touch via this form. You ask any questions or give feedback about the website!<br/><br/>
+
+                I would usually reply within 2 business days.
+            </p>
+            <form method="GET" id="contact-form">
+                <input id="name" class="textbox" placeholder="Your Name"/>
+                <input id="email" class="textbox" placeholder="Your Email"/>
+                <input id="message" class="textbox" placeholder="Your Message"/>
+                <input class="button" type="submit" value="Send Message"/>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

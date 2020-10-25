@@ -1,0 +1,537 @@
+/*
+	Name: Aditi kapoor
+	Student ID: 301108498
+	Date: 21-10-2020
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    background: url("/public/images/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+p {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.logo {
+    max-width: 60px;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    transition: background-color 0.4s;
+    padding: 15px 20px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid orange;
+    margin: 20px 0;
+    max-width: 150px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+section .caption {
+    font-size: 38px;
+    margin-top: 20px;
+}
+
+.contact-table {
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contact-table td {
+    padding: 15px;
+    min-width: 120px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.image-card-1 {
+    position: relative;
+    max-width: 370px;
+    min-width: 300px;
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    height: 500px;
+}
+.image-card-1 .image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.image-card-1 img {
+    width: 100%;
+    height: 100%;
+    margin-left: -0.2px;
+}
+.image-card-1 .content {
+}
+.image-card-1 .content p {
+    margin: 10px 0;
+    padding: 20px 20px;
+}
+.image-card-1 .title {
+    position: relative;
+    color: orange;
+    font-size: 24px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.image-card-1 .nav {
+    border-top: 1px solid #ddd;
+    padding: 15px 20px;
+}
+.image-card-1 .nav a {
+    color: rgb(144, 148, 144);
+    display: inline-block;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.image-card-1 .nav a:not(:first-of-type) {
+    margin: 0 10px;
+}
+.image-card-1 .nav a:hover {
+    color: #000;
+}
+
+#header {
+    width: 100%;
+    background: #111;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+#header .inner {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+#header .navigation {
+    margin: 0 0 0 auto;
+}
+#header .nav-container {
+    display: inline-block;
+    margin: 0 0 0 auto;
+    text-align: center;
+}
+#header .nav-container .fas {
+    font-size: 22px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+#header nav a {
+    margin: 0 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+#header nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#footer {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: #111;
+    margin-top: 40px;
+}
+#footer .copyright {
+    text-align: center;
+    margin: 10px auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome-message {
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 700px;
+    margin: 50px auto;
+    min-width: 330px;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid orange;
+}
+.welcome-message .title {
+    font-size: 34px;
+    color: orange;
+}
+.quote {
+    margin: 50px auto;
+    color: #fff;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-left: 5px solid orange;
+}
+.quote figcaption,
+.quote blockquote {
+    margin: 1em;
+}
+
+.aboutme {
+    color: #fff;
+    max-width: 1000px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
+}
+.aboutme .picture {
+    max-width: 250px;
+    height: auto;
+}
+.aboutme .description {
+    margin: 40px 0;
+    max-width: 700px;
+}
+.aboutme-title {
+    color: orange;
+    font-size: 48px;
+    text-align: center;
+}
+
+.projects {
+    padding: 50px 20px 100px 20px;
+}
+.projects .section-title {
+    color: orange;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 48px;
+}
+.projects .cards-container {
+    margin-top: 100px;
+    text-align: center;
+}
+.projects .image-card-1 {
+    margin: 0 25px;
+}
+
+.services {
+    max-width: 1300px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+}
+.services .col-left {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    margin: 0 30px;
+}
+.services .col-right {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 45%;
+    margin: 0 30px;
+}
+.services .section-title {
+    margin: 0;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: orange;
+}
+.services .service {
+    max-width: 500px;
+    min-width: 400px;
+    margin: 30px;
+    color: black;
+    text-align: left;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.services .service:last-of-type {
+    margin-bottom: 0;
+}
+.services .service .trigger {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+}
+.services .service .service-content {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    min-height: 130px;
+}
+.services .service .service-content:not(:first-of-type) {
+    display: none;
+}
+
+.contact {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.contact .caption {
+    color: orange;
+}
+.contactform {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.contactform .textbox {
+    border: none;
+    display: block;
+    max-width: 360px;
+    min-width: 300px;
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+    transition: all 0.3s;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Noto Sans", sans-serif;
+    background: rgba(255, 255, 255, 0.5);
+}
+.contactform .textbox::placeholder {
+    color: #eee;
+}
+.contactform .button {
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+}
+.contactform .caption {
+    color: orange;
+}
+
+.login {
+    max-width: 430px;
+    padding: 20px;
+    margin: 70px auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+    text-align: center;
+}
+.login .caption {
+    color: orange;
+    margin: 10px 0;
+    font-size: 52px;
+    margin-bottom: 40px;
+}
+.login a {
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.login a:hover {
+    color: orange;
+}
+
+.admin {
+    max-width: 1100px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.admin .title {
+    color: orange;
+    margin: 10px 0;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+.account-controls a {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: all 0.2s;
+}
+.account-controls a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.contact-list {
+    border-collapse: collapse;
+    min-width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: black;
+    margin: 0 auto;
+}
+.contact-list th {
+    background: orange;
+    color: white;
+    padding: 20px;
+}
+.contact-list td {
+    padding: 15px;
+    color: #fff;
+}
+.contact-list tr:nth-child(even) {
+    background: rgba(200, 200, 200, 0.5);
+}
+.contact-list tr:nth-child(odd) {
+    background: rgba(200, 200, 200, 0.7);
+}
+.contact-list a {
+    display: block;
+    background: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.contact-list a:hover {
+    background: #555;
+}
+
+.update {
+    max-width: 580px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+}
+.update .form-s1 {
+    margin: 0 auto;
+    text-align: center;
+}
+.update .form-s1 .textbox {
+    width: 100%;
+}
+.update .title {
+    color: #090;
+    margin: 10px 0;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.form {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 480px;
+}
+.form .fieldgroup {
+    padding: 10px 0;
+}
+.form .textbox {
+    padding: 15px 0px 10px 0px;
+    font-size: 16px;
+    border: none;
+    min-width: 280px;
+    border-bottom: 2px solid #000;
+}
+.form .textbox:focus {
+    outline: none;
+}
+.form .button {
+    background: black;
+    border-radius: 5px;
+    min-width: 120px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.form .button:hover {
+    background-color: #333;
+}
+
+.account-controls {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+.account-controls a {
+    min-width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-width: 900px) {
+    #header .inner {
+        display: block;
+        text-align: center;
+    }
+    #header .logo {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    #header nav a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto 15px auto;
+        max-width: 200px;
+        text-align: center;
+    }
+    .services .col-left {
+        max-width: 80%;
+        margin: 0;
+    }
+    .services .col-right {
+        max-width: 80%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-projects .cards-container {
+        display: block !important;
+        text-align: center;
+    }
+    .section-projects .image-card-1 {
+        display: block;
+        margin: 50px auto !important;
+    }
+}
